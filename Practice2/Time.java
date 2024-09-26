@@ -1,6 +1,6 @@
 package Practice2;
 
-class Time {
+public class Time {
     private Integer hour, minute, second;
 
     public Time (Integer hour, Integer minute, Integer second) {

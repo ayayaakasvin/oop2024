@@ -2,7 +2,7 @@ package Practice2;
 
 import java.lang.StringBuilder;
 
-class StarTriangle {
+public class StarTriangle {
     public Integer amount = 1;
     private String star = "[*]";
 
