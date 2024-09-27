@@ -32,4 +32,8 @@ public class Student {
     public void PropertyPrint () {
         System.out.printf("Student %s : %d\n", this.GetName(), this.GetGrade());
     }
+
+    public String toString () {
+        return String.format("Student : %s, ID : %d, Year of Study : %d, Grade : %d", this.name, this.id, this.year_of_study, this.grade);
+    }
 }

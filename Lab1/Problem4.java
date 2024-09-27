@@ -12,6 +12,10 @@ class Course {
     Course () {
 
     }
+
+    public  String toString () {
+        return String.format("Name : %s, Description : %s, Credits : %d, Prerequisite : %s", this.name, this.description, this.creditsNumber, this.prerequisite);
+    }
 }
 
 class GradeBook {
@@ -119,6 +123,20 @@ class GradeBook {
         }
         System.out.printf("100: %s\n", studentCount.toString());
     }
+    
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Course: ").append(course.name)
+          .append(", Credits: ").append(course.creditsNumber)
+          .append(", Prerequisite: ").append(course.prerequisite)
+          .append("\nStudents: \n");
+        
+        for (Student student : StudentList) {
+            sb.append(student.GetName()).append(" - ").append(student.GetGrade()).append("\n");
+        }
+        return sb.toString();
+    }    
 }
 
 class GradeBookTest {
