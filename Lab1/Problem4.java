@@ -124,7 +124,6 @@ class GradeBook {
         System.out.printf("100: %s\n", studentCount.toString());
     }
     
-    @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Course: ").append(course.name)
