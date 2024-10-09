@@ -67,13 +67,11 @@ class Staff extends User {
 
     @Override
     public String getData() {
-        // TODO Auto-generated method stub
         return  toString();
     }
 
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
         return super.toString() + String.format("\nSalary : %.2f\nSubject : %s", this.salary, this.subject);
     }
 }
@@ -100,13 +98,11 @@ class Student extends User {
     
     @Override
     public String getData() {
-        // TODO Auto-generated method stub
         return  toString();
     }
 
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
         return super.toString() + String.format("\nGPA : %.2f\nSubject : %s", this.gpa, String.join(", ", this.cources));
     }
 }

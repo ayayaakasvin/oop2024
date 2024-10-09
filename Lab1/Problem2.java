@@ -119,7 +119,7 @@ class Circle {
         wrongInput.PropertiesPrint();
         System.out.printf("Total number of circleCount : %d\n", Circle.circleCount);
 
-        Circle newOne = Circle.usingInput();
-        System.out.printf("Total number of circleCount : %d\n", Circle.circleCount);
+        // Circle newOne = Circle.usingInput();
+        // System.out.printf("Total number of circleCount : %d\n", Circle.circleCount);
     }
 }
