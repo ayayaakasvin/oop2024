@@ -5,8 +5,8 @@ import java.util.Scanner;
 class Data {
     private Integer counter = 0;
     private Double average = 0.0;
-    private Double highest = Double.NEGATIVE_INFINITY;
-    
+    private Double highest = Double.NEGATIVE_INFINITY; 
+
     public Data () {}
 
     public void add (Double input) {
